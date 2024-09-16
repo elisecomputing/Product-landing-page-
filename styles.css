@@ -1,0 +1,83 @@
+/* Basic resets */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Fixed navbar */
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center nav links */
+    gap: 20px; /* Space between links */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Header styling */
+#header {
+    padding-top: 50px; /* Adjust padding for fixed navbar */
+    text-align: center; /* Center align header content */
+}
+
+#header-img {
+    width: 60%; /* Adjust width as needed */
+    max-width: 500px; /* Ensure the image doesn't get too large */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Main content styling */
+#home, #about, #contact, #subscribe {
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Video styling */
+#video {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Flexbox for responsiveness */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form styling */
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email, #submit {
+    margin: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #video {
+        width: 100%;
+    }
+}
